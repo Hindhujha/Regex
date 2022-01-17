@@ -12,6 +12,7 @@ namespace UserRegistration
         public string Regex_First_Name = "[A-Z]+[a-z]{3,}";
         public string Regex_Last_Name = "[A-Z]+[a-z]{3,}";
         public string Regex_Email_Id = "[a-z 0-9 . _ ]+[@][a-z]+[.][a-z]{2,3}";
+        public string Regex_Phone_No = "[9][1][][6 7 8 9][0-9]{9}";
         //validating first name
         public void FirstName(string FirstName)
         {
@@ -49,6 +50,18 @@ namespace UserRegistration
             else
             {
                 Console.WriteLine("Email Id IS NOT VALID ENTER A VALID NAME");
+            }
+        }
+        public void Phone_No(string Phone_No)
+        {
+            if (Regex.IsMatch(Phone_No, Regex_Phone_No) == true)
+
+            {
+                Console.WriteLine("MOBILE NUMBER  IS VALID");
+            }
+            else
+            {
+                Console.WriteLine("MOBILE NUMBER IS NOT VALID ENTER A VALID NUMBER");
             }
         }
     }

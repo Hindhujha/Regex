@@ -13,6 +13,10 @@ namespace UserRegistration
             myObj.LastName(Console.ReadLine());
             Console.WriteLine("ENTER A VALID EMAIL ID");
             myObj.EmailId(Console.ReadLine());
+            Console.WriteLine("ENTER A VALID MOBILE NUMBER WITH COUNTRY CODE");
+            myObj.Phone_No(Console.ReadLine());
+
+
         }
     }
 }
