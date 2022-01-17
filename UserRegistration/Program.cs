@@ -15,6 +15,8 @@ namespace UserRegistration
             myObj.EmailId(Console.ReadLine());
             Console.WriteLine("ENTER A VALID MOBILE NUMBER WITH COUNTRY CODE");
             myObj.Phone_No(Console.ReadLine());
+            Console.WriteLine("ENTER A PASSWORD");
+            myObj.Password(Console.ReadLine());
 
 
         }
