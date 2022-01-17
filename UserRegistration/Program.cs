@@ -11,6 +11,8 @@ namespace UserRegistration
             myObj.FirstName(Console.ReadLine());
             Console.WriteLine("ENTER A VALID LAST NAME");
             myObj.LastName(Console.ReadLine());
+            Console.WriteLine("ENTER A VALID EMAIL ID");
+            myObj.EmailId(Console.ReadLine());
         }
     }
 }
