@@ -6,6 +6,10 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("USER REGISTRATION PROGRAM");
+            Patterns myObj = new Patterns();
+            Console.WriteLine("ENTER A VALID FIRST NAME");
+            myObj.FirstName(Console.ReadLine());
+
         }
     }
 }
