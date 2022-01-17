@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 namespace UserRegistration
-{//"@^(.{0,7}|[^0-9]*|[^A-Z])$";
+{
     public class Patterns
     {
         public string Regex_First_Name = "^[A-Z]+[a-z]{3,}$"; 
         public string Regex_Last_Name = "^[A-Z]+[a-z]{3,}$";
         public string Regex_Email_Id = "^[a-z 0-9 . _ ]+[@][a-z]+[.][a-z]{2,3}$";
         public string Regex_Phone_No = "^[9][1][][6 7 8 9][0-9]{9}$";
-        public string Regex_Password = "^[a-zA-Z]+[a-zA-Z0-9]{8,15}$";
+        public string Regex_Password = "^[a-z A-Z 0-9 ! @ # $ % ^ & *]{8,15}$";
         //validating first name
         public void FirstName(string FirstName)
         {
