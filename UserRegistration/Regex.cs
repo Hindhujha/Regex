@@ -13,7 +13,7 @@ namespace UserRegistration
         public string Regex_Last_Name = "[A-Z]+[a-z]{3,}";
         public string Regex_Email_Id = "[a-z 0-9 . _ ]+[@][a-z]+[.][a-z]{2,3}";
         public string Regex_Phone_No = "[9][1][][6 7 8 9][0-9]{9}";
-        public string Regex_Password = "[ a-z]{8,}";
+        public string Regex_Password = "[a-z A-z]{8,15}";
         //validating first name
         public void FirstName(string FirstName)
         {
