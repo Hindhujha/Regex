@@ -17,66 +17,101 @@ namespace UserRegistration
         //validating first name
         public void FirstName(string FirstName)
         {
-            if (Regex.IsMatch(FirstName, Regex_First_Name) == true)
+            try
+            {
+                if (Regex.IsMatch(FirstName, Regex_First_Name) == true)
 
-            {
-                Console.WriteLine("FIRST NAME IS VALID");
+                {
+                    Console.WriteLine("FIRST NAME IS VALID");
+                }
+                else
+                {
+                    Console.WriteLine("FIRST NAME IS NOT VALID ENTER A VALID NAME");
+                }
             }
-            else
+            catch(Exception ex)
             {
-                Console.WriteLine("FIRST NAME IS NOT VALID ENTER A VALID NAME");
+                Console.WriteLine(ex.Message);
             }
         }
         //validating last name
         public void LastName(string LastName)
         {
-            if (Regex.IsMatch(LastName, Regex_Last_Name) == true)
+            try
+            {
+                if (Regex.IsMatch(LastName, Regex_Last_Name) == true)
 
-            {
-                Console.WriteLine("Last NAME IS VALID");
+                {
+                    Console.WriteLine("Last NAME IS VALID");
+                }
+                else
+                {
+                    Console.WriteLine("LAST NAME IS NOT VALID ENTER A VALID NAME");
+                }
             }
-            else
+            catch(Exception ex)
             {
-                Console.WriteLine("LAST NAME IS NOT VALID ENTER A VALID NAME");
+                Console.WriteLine(ex.Message);
             }
         }
         //validating email id
         public void EmailId(string EmailId)
         {
-            if (Regex.IsMatch(EmailId, Regex_Email_Id) == true)
+            try
+            {
+                if (Regex.IsMatch(EmailId, Regex_Email_Id) == true)
 
-            {
-                Console.WriteLine("Email Id  IS VALID");
+                {
+                    Console.WriteLine("Email Id  IS VALID");
+                }
+                else
+                {
+                    Console.WriteLine("Email Id IS NOT VALID ENTER A VALID NAME");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Email Id IS NOT VALID ENTER A VALID NAME");
+                Console.WriteLine(ex.Message);
             }
         }
         //validating Mobile No
         public void Phone_No(string Phone_No)
         {
-            if (Regex.IsMatch(Phone_No, Regex_Phone_No) == true)
+            try
+            {
+                if (Regex.IsMatch(Phone_No, Regex_Phone_No) == true)
 
-            {
-                Console.WriteLine("MOBILE NUMBER  IS VALID");
+                {
+                    Console.WriteLine("MOBILE NUMBER  IS VALID");
+                }
+                else
+                {
+                    Console.WriteLine("MOBILE NUMBER IS NOT VALID ENTER A VALID NUMBER");
+                }
             }
-            else
+            catch(Exception e)
             {
-                Console.WriteLine("MOBILE NUMBER IS NOT VALID ENTER A VALID NUMBER");
+                Console.WriteLine(e.Message);
             }
         }
         //validating Password
         public void Password(string Password)
         {
-            if (Regex.IsMatch(Password, Regex_Password) == true)
+            try
+            {
+                if (Regex.IsMatch(Password, Regex_Password) == true)
 
-            {
-                Console.WriteLine("PASSWORD  IS VALID");
+                {
+                    Console.WriteLine("PASSWORD  IS VALID");
+                }
+                else
+                {
+                    Console.WriteLine("PASSWORD IS NOT VALID ENTER A VALID PASSWORD");
+                }
             }
-            else
+            catch( Exception e)
             {
-                Console.WriteLine("PASSWORD IS NOT VALID ENTER A VALID PASSWORD");
+                Console.WriteLine(e.Message);
             }
         }
     }
